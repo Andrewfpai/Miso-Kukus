@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Manrope:wght@800&family=Orbitron:wght@500&family=Poppins&family=Rubik:wght@400;500;700&family=Short+Stack&family=Spartan:wght@700&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Manrope:wght@800&family=Orbitron:wght@500&family=Poppins&family=Rubik:wght@400;500;700&family=Short+Stack&family=Spartan:wght@500;700&family=Volkhov&display=swap');
+:root{
+    --Poppins: 'Poppins', sans-serif;
+    --Spartan : 'Spartan', sans-serif;
+    
+
+}
+
+body{
+    max-width: 1280px;
+    font-family: var(--Poppins);
+    // background-color: black;
+}
+
+.wave-container{
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+// .testing{
+//     width: 100%;
+//     background-color: rgba(77, 194, 198, 1);
+//     height: 100px;
+// }
+
+.top{
+    display: flex;
+    flex-direction: row;
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    .title{
+        position: absolute;
+        top: 5%;
+        left: 32%;
+        width:450px;
+        
+    }
+
+    .slogan{
+        position: absolute;
+        right: 3%;
+        top: 5%;
+        font-weight: 800;
+    }
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+
+    .jamKerja-container{
+        position: absolute;
+        width: 220px;
+        height: 250px;
+        left: 7%;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+
+        background: #FFFFFF;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        transition: 1s;
+        transform: translateY(30px);
+
+        .timeIcon{
+            margin-top: 15px;
+            width: 75px;
+        }
+
+
+        .jamKerja-second{
+            margin-bottom: 30px;
+            color:  rgba(0, 0, 0, 0.25);
+        }
+
+    }
+
+    .mainImage{
+        position: absolute;
+        top: 30%;
+        left: 32%;
+    }
+
+    .kontak-container{
+        position: absolute;
+        width: 220px;
+        right: 7%;
+        top: 18%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+
+        background: #FFFFFF;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        transform: translateY(30px);
+
+        .instagramIcon{
+            margin-top: 15px;
+            width: 75px;
+        }
+
+        .kontak-first{
+           text-align: center;
+        }
+
+        .kontak-second{
+            margin-bottom: 30px;
+            color:  rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 38%;
+    top: 95%;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+
+    .bottom-text{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .orderNow{
+        background: #F57B51;
+        border-radius: 50px; 
+        border: 0;
+        width: 175px;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        border: 2px solid #F57B51;
+
+        &:hover {
+            background-color: white;
+            color: black;
+          }
+          
+           
+    }
+
+    
+}
+
+.bottom-two{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:130%;
+    left: 18%;
+    align-items: center;
+
+    .watchThis{
+        margin-bottom: 15px;
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .video{
+        margin-bottom: 40px;
+    }
+
+}
+
+.wave-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:200px;
+    padding-top: 100px;
+    background: rgba(245, 123, 81, 1);
+    margin-right: -10px;
+}
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 1250px;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 690px;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: white;
+    
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(245, 123, 81, 1);
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.small-device{
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+   .container{
+       display: none;
+   }
+   .small-device{
+       margin-top: 30px;
+       text-align: center;
+       display: block;
+       position: absolute;
+       font-family: var(--Spartan);
+
+       .info1{
+           margin-top: 30px;
+       }
+
+       .info2{
+           margin-top: 30px;
+       }
+       .info3{
+           margin-top: 50px;
+       }
+
+   }
+}
+
+
